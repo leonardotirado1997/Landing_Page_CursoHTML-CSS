@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- 
+  Declaração do tipo de documento.
+  Todo documento HTML5 começa com esta linha.
+-->
+<html lang="pt-BR">
+<!-- 
+  Tag <html>: raiz do documento.
+  lang="pt-BR" indica que o conteúdo está em português do Brasil.
+-->
+
+<head>
+  <!-- 
+    <head>: contém informações sobre a página (não aparecem na tela).
+    Aqui ficam: título, links para CSS, meta tags, etc.
+  -->
+  <meta charset="UTF-8">
+  <!-- charset=UTF-8 permite usar acentos e caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- viewport: ajuda a página a se adaptar em celulares -->
+  <title>Minha Landing Page</title>
+  <!-- Título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link para o arquivo CSS que estiliza a página -->
+</head>
+
+<body>
+  <!-- 
+    <body>: contém todo o conteúdo visível da página.
+    Tudo que o usuário vê fica dentro do body.
+  -->
+
+  <!-- ========== HEADER ========== -->
+  <!-- 
+    Header: cabeçalho da página.
+    Geralmente contém logo e menu de navegação.
+    Usamos "class" para dar um nome ao elemento e estilizá-lo no CSS.
+  -->
+  <header class="header">
+    <div class="header-conteudo">
+      <!-- div: "division" - agrupa elementos sem significado especial -->
+      <h1 class="logo">Meu Site</h1>
+      <!-- h1: título principal (só um por página é o ideal) -->
+      
+      <nav class="menu">
+        <!-- nav: seção de navegação com links -->
+        <a href="#home" class="menu-link">Home</a>
+        <a href="#sobre" class="menu-link">Sobre</a>
+        <a href="#servicos" class="menu-link">Serviços</a>
+        <a href="#contato" class="menu-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== SEÇÃO HERO (Principal) ========== -->
+  <!-- 
+    section: agrupa conteúdo relacionado.
+    id: identificador único (usado nos links do menu para rolar até aqui).
+  -->
+  <section id="home" class="hero">
+    <div class="hero-conteudo">
+      <h2 class="hero-titulo">Bem-vindo ao nosso site!</h2>
+      <!-- h2: subtítulo -->
+      <p class="hero-texto">
+        Aqui você encontra as melhores soluções para o seu negócio. 
+        Conheça nossos serviços e entre em contato conosco.
+      </p>
+      <!-- p: parágrafo -->
+      <a href="#sobre" class="botao">Saiba Mais</a>
+      <!-- a: link. href="#sobre" leva à seção Sobre na mesma página -->
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO SOBRE ========== -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <!-- "container" é uma classe comum para limitar a largura e centralizar -->
+      <h2 class="secao-titulo">Sobre Nós</h2>
+      <p class="secao-texto">
+        Somos uma empresa dedicada a oferecer soluções de qualidade para nossos clientes. 
+        Com anos de experiência no mercado, estamos prontos para ajudar você a alcançar 
+        seus objetivos. Nossa missão é simplificar e melhorar o dia a dia das pessoas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO SERVIÇOS ========== -->
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2 class="secao-titulo">Nossos Serviços</h2>
+      
+      <!-- div com classe "cards": agrupa os 3 cards -->
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <h3 class="card-titulo">Consultoria</h3>
+          <p class="card-texto">Oferecemos consultoria especializada para ajudar sua empresa a crescer.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <h3 class="card-titulo">Desenvolvimento</h3>
+          <p class="card-texto">Criamos sites e aplicativos sob medida para suas necessidades.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <h3 class="card-titulo">Suporte</h3>
+          <p class="card-texto">Equipe disponível para tirar dúvidas e dar suporte contínuo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO CONTATO ========== -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2 class="secao-titulo">Entre em Contato</h2>
+      <p class="secao-texto">
+        Ficou interessado? Entre em contato conosco e tire suas dúvidas.
+      </p>
+      <a href="mailto:contato@meusite.com" class="botao">Enviar E-mail</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <!-- 
+    footer: rodapé da página.
+    Geralmente contém copyright, links secundários, etc.
+  -->
+  <footer class="footer">
+    <p class="footer-texto">&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    <!-- &copy; é o símbolo de copyright (©) em HTML -->
+  </footer>
+
+</body>
+</html>
